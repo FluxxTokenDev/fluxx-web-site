@@ -28,8 +28,8 @@ const Navbar = ({
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
   ],
-  onSignIn = () => console.log("Sign in clicked"),
-  onCreateAccount = () => console.log("Create account clicked"),
+  onSignIn = () => (window.location.href = "/login"),
+  onCreateAccount = () => (window.location.href = "/signup"),
 }: NavbarProps) => {
   return (
     <nav className="fixed top-0 w-full h-20 bg-[#0A0A0A] border-b border-gray-800 z-50">

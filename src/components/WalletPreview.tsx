@@ -34,7 +34,7 @@ const WalletPreview = () => {
           >
             <div className="max-w-sm">
               <img
-                src="https://api.dicebear.com/7.x/shapes/svg?seed=wallet-preview"
+                src="../../public/Screenshot_2025_removebg-preview.png"
                 alt="Wallet Preview"
                 className="w-full rounded-2xl shadow-lg mb-8"
               />
@@ -59,17 +59,17 @@ const WalletPreview = () => {
             className="bg-[#111111] rounded-[32px] p-8 relative overflow-hidden shadow-xl"
           >
             <div className="max-w-sm">
-              <img
-                src="https://api.dicebear.com/7.x/shapes/svg?seed=wallet-preview-2"
-                alt="Wallet Usage Preview"
-                className="w-full rounded-2xl shadow-lg mb-8"
-              />
               <h3 className="text-3xl font-bold text-white mb-4">
                 Use everywhere
               </h3>
               <p className="text-gray-400">
                 Trade like there is no limit. Trade for Value, Trade with Fluxx
               </p>
+              <img
+                src="../../public/Screenshot_2025_removebg-preview.png"
+                alt="Wallet Usage Preview"
+                className="w-full rounded-2xl shadow-lg mb-8"
+              />
             </div>
           </motion.div>
         </div>

@@ -8,6 +8,7 @@ import SimpleSecure from "./SimpleSecure";
 import TokenSection from "./TokenSection";
 import FeaturesGrid from "./FeaturesGrid";
 import ExploreSection from "./ExploreSection";
+import FAQSection from "./FAQSection";
 import { motion } from "framer-motion";
 import Footer from "./Footer";
 
@@ -17,8 +18,8 @@ interface HomeProps {
 }
 
 const Home = ({
-  onSignIn = () => console.log("Sign in clicked"),
-  onCreateAccount = () => console.log("Create account clicked"),
+  onSignIn = () => (window.location.href = "/login"),
+  onCreateAccount = () => (window.location.href = "/signup"),
 }: HomeProps) => {
   return (
     <motion.div
@@ -39,6 +40,7 @@ const Home = ({
         <TrustSection />
         <ExploreSection />
         <TokenSection />
+        <FAQSection />
         <ProductShowcase />
       </main>
 

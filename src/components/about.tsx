@@ -37,6 +37,68 @@ const About = () => {
           </div>
         </section>
 
+        {/* Overview Section */}
+        <section className="w-full bg-[#0A0A0A] py-24 px-4">
+          <div className="container mx-auto max-w-4xl">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="space-y-8 text-white"
+            >
+              <p className="text-lg leading-relaxed">
+                FLUXX is a next-generation blockchain platform designed to
+                create a seamless, borderless payment ecosystem that goes beyond
+                traditional fiat currencies. It empowers users to transact,
+                save, and build wealth using a secure, decentralized, and
+                efficient cryptocurrency system. FLUXX provides individuals and
+                businesses with the tools to embrace digital finance
+                confidently, enabling real-time, low-cost transactions across
+                the globe without the barriers imposed by conventional banking
+                systems.
+              </p>
+              <p className="text-lg leading-relaxed">
+                At its core, FLUXX operates on a blockchain framework that
+                ensures transparency, security, and immutability. Users can send
+                and receive payments in FLUXX tokens, which are optimized for
+                speed and minimal transaction fees. The platform integrates Web3
+                technologies to support diverse use cases, from e-commerce
+                purchases to peer-to-peer transfers, creating a versatile
+                financial ecosystem. With FLUXX, you're not just engaging in
+                transactions—you're participating in a movement that redefines
+                how value is exchanged in a connected world.
+              </p>
+            </motion.div>
+
+            {/* Floating Coin */}
+            <motion.div
+              className="relative w-full h-48 mt-12 flex items-center justify-center"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
+              <motion.div
+                animate={{
+                  y: [0, -20, 0],
+                  rotateY: [0, 360],
+                }}
+                transition={{
+                  duration: 6,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+                className="w-32 h-32"
+              >
+                <img
+                  src="/fluxx_coin.png"
+                  alt="Fluxx Coin"
+                  className="w-full h-full object-contain"
+                />
+              </motion.div>
+            </motion.div>
+          </div>
+        </section>
+
         {/* Mission Section */}
         <section className="w-full bg-white py-24 px-4">
           <div className="container mx-auto max-w-4xl">
