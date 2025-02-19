@@ -24,8 +24,8 @@ const Navbar = ({
   logo = "Fluxx",
   menuItems = [
     { label: "Home", href: "/" },
-    { label: "Features", href: "/features" },
     { label: "About", href: "/about" },
+    { label: "Blog", href: "/blog" },
     { label: "Contact", href: "/contact" },
   ],
   onSignIn = () => (window.location.href = "/login"),

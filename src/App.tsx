@@ -6,8 +6,12 @@ import Dashboard from "./components/admin/pages/Dashboard";
 import ContentManager from "./components/admin/pages/ContentManager";
 import MediaManager from "./components/admin/pages/MediaManager";
 import Settings from "./components/admin/pages/Settings";
+import BlogManager from "./components/admin/pages/BlogManager";
 import Home from "./components/home";
 import About from "./components/about";
+import BlogLayout from "./components/blog/BlogLayout";
+import BlogList from "./components/blog/BlogList";
+import BlogPost from "./components/blog/BlogPost";
 import IndividualsPage from "./components/IndividualsPage";
 import MerchantsPage from "./components/MerchantsPage";
 import ExchangesPage from "./components/ExchangesPage";
@@ -34,6 +38,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<BlogLayout />}>
+            <Route index element={<BlogList />} />
+            <Route path=":slug" element={<BlogPost />} />
+          </Route>
           <Route path="/individuals" element={<IndividualsPage />} />
           <Route path="/merchants" element={<MerchantsPage />} />
           <Route path="/exchanges" element={<ExchangesPage />} />
@@ -58,6 +66,7 @@ function App() {
               <Route path="content" element={<ContentManager />} />
               <Route path="media" element={<MediaManager />} />
               <Route path="settings" element={<Settings />} />
+              <Route path="blog" element={<BlogManager />} />
             </Route>
           </Route>
 

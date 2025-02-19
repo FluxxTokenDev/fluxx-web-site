@@ -42,6 +42,12 @@ export default function AdminSidebar() {
       permission: "manage_site_settings" as const,
     },
     {
+      name: "Blog",
+      href: "/admin/blog",
+      icon: FileText,
+      permission: "manage_content" as const,
+    },
+    {
       name: "Users",
       href: "/admin/users",
       icon: Users,
