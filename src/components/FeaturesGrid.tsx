@@ -14,9 +14,9 @@ const FeaturesGrid = () => {
             className="bg-[#FF3B30] rounded-[32px] p-12 relative overflow-hidden"
           >
             <div className="flex flex-col items-center text-center">
-              <div className="mb-8 w-32 h-32">
+              <div className="mb-8 w-128 h-128">
                 <img
-                  src="https://api.dicebear.com/7.x/shapes/svg?seed=lightning-cube"
+                  src="/blockchain-technologies.png"
                   alt="Lightning Fast"
                   className="w-full h-full object-contain"
                 />
@@ -42,9 +42,9 @@ const FeaturesGrid = () => {
             className="bg-[#0066FF] rounded-[32px] p-12 relative overflow-hidden"
           >
             <div className="flex flex-col items-center text-center">
-              <div className="mb-8 w-32 h-32">
+              <div className="mb-8 w-128 h-128">
                 <img
-                  src="https://api.dicebear.com/7.x/shapes/svg?seed=privacy-lock"
+                  src="/Mail-security-with-padlock-and-at-sign.png"
                   alt="Privacy Preserving"
                   className="w-full h-full object-contain"
                 />
@@ -53,13 +53,9 @@ const FeaturesGrid = () => {
                 Privacy-Preserving
               </h3>
               <p className="text-white/90 text-lg">
-                Your security is a priority. From our Lite Wallet,
-                <br />
-                through your interactions with your favourite
-                <br />
-                merchants to your final payments, you are
-                <br />
-                completely safe.
+                Your security is a priority. From our Lite Wallet,through your
+                interactions with your favouritemerchants to your final
+                payments, you arecompletely safe.
               </p>
             </div>
           </motion.div>

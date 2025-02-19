@@ -34,7 +34,7 @@ const WalletPreview = () => {
           >
             <div className="max-w-sm">
               <img
-                src="../../public/Screenshot_2025_removebg-preview.png"
+                src="/Screenshot_2025_removebg-preview.png"
                 alt="Wallet Preview"
                 className="w-full rounded-2xl shadow-lg mb-8"
               />
@@ -66,7 +66,7 @@ const WalletPreview = () => {
                 Trade like there is no limit. Trade for Value, Trade with Fluxx
               </p>
               <img
-                src="../../public/Screenshot_2025_removebg-preview.png"
+                src="/Screenshot_2025_removebg-preview.png"
                 alt="Wallet Usage Preview"
                 className="w-full rounded-2xl shadow-lg mb-8"
               />
