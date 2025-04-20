@@ -19,6 +19,7 @@ import LoginForm from "./components/auth/LoginForm";
 import SignUpForm from "./components/auth/SignUpForm";
 import UserLayout from "./components/layouts/UserLayout";
 import UserDashboard from "./components/user/UserDashboard";
+import WhitepaperPage from "./components/WhitepaperPage";
 import routes from "tempo-routes";
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
           <Route path="/exchanges" element={<ExchangesPage />} />
           <Route path="/login" element={<LoginForm />} />
           <Route path="/signup" element={<SignUpForm />} />
+          <Route path="/whitepaper" element={<WhitepaperPage />} />
 
           {/* User Routes */}
           <Route path="/dashboard/*" element={<UserLayout />}>

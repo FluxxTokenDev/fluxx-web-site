@@ -9,6 +9,7 @@ import TokenSection from "./TokenSection";
 import FeaturesGrid from "./FeaturesGrid";
 import ExploreSection from "./ExploreSection";
 import FAQSection from "./FAQSection";
+import SocialMediaSection from "./SocialMediaSection";
 import { motion } from "framer-motion";
 import Footer from "./Footer";
 
@@ -37,6 +38,7 @@ const Home = ({
         <WalletPreview />
         <SimpleSecure />
         <FeaturesGrid />
+        <SocialMediaSection /> {/* New Social Media Section */}
         <TrustSection />
         <ExploreSection />
         <TokenSection />

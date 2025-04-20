@@ -27,6 +27,7 @@ const Navbar = ({
     { label: "About", href: "/about" },
     { label: "Blog", href: "/blog" },
     { label: "Contact", href: "/contact" },
+    { label: "Whitepaper", href: "/whitepaper" }, // Added Whitepaper link
   ],
   onSignIn = () => (window.location.href = "/login"),
   onCreateAccount = () => (window.location.href = "/signup"),
